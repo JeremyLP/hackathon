@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {components} from 'react';
 import './Navbar.css';
 
 
-class Navbar extends Component {
+class Navbar extends React.Component{
     constructor(props) {
         super(props);
         this.state = {}
