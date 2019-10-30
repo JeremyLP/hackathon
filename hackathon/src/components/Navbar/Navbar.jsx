@@ -15,12 +15,11 @@ class Navbar extends Component {
 
                      <div className="mob-12 tab-12 dsk-12 ">
 
-                        <ul className=" tab-12 flex space-around align-nav ul-padding  ">
+                        <ul className=" tab-12 mob-12 dsk-12 flex align-nav ul-padding justify-nav  ">
 
-                        <li className=" style-none tab-3 tab-offset-1 dsk-3 dsk-offset-1" >  <i className="fas fa-skull-crossbones"></i> </li> 
-                        <li className=" style-none tab-3 dsk-3 " >  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
-                        <li className=" style-none tab-3 dsk-3 ">  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
-                        <li className=" style-none tab-3 dsk-3 ">  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
+                        <li className=" style-none mob-3 tab-3 dsk-4 flex justify-nav " >  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
+                        <li className=" style-none mob-3 tab-3 dsk-4 flex justify-nav ">  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
+                        <li className=" style-none mob-3 tab-3 dsk-4 flex justify-nav ">  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
 
                         </ul>
 
