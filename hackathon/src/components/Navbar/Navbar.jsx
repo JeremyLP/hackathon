@@ -17,7 +17,7 @@ class Navbar extends Component {
 
                         <ul className=" tab-12 flex space-around align-nav ul-padding  ">
 
-                        <li className=" style-none tab-3 tab-offset-1 dsk-3 dsk-offset-1" >  <img className="size-logo-nav"  src="" /> </li>
+                        <li className=" style-none tab-3 tab-offset-1 dsk-3 dsk-offset-1" >  <i className="fas fa-skull-crossbones"></i> </li> 
                         <li className=" style-none tab-3 dsk-3 " >  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
                         <li className=" style-none tab-3 dsk-3 ">  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
                         <li className=" style-none tab-3 dsk-3 ">  <a href="#" className="text-deco-none color-txt-nav"> ????? </a>  </li>
