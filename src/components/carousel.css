@@ -2,8 +2,32 @@
     width: 100%; 
   }
 
-  /* .carousel-control-next {
-      background-image: url('https://banner2.kisspng.com/20180805/zci/kisspng-pumpkin-pie-computer-icons-clip-art-portable-netwo-pumpkin-icon-5b671c205f7e10.1359751615334840643911.jpg');
-    height: 70px;
-    padding-top: 50px;
-    } */
+  .carousel-control-prev-icon { 
+    background-image:url("https://icon-library.net/images/pumpkin-icon-png/pumpkin-icon-png-11.jpg") !important; 
+    width: 80px !important;
+    height: 80px !important;
+    
+  }
+
+   .carousel-control-next-icon {
+    background-image:url("https://icon-library.net/images/pumpkin-icon-png/pumpkin-icon-png-11.jpg") !important; 
+    width: 80px !important;
+    height: 80px !important;
+    
+    
+  }
+
+  .carousel-control-next-icon:hover {
+    content: ">" !important;
+    background-image:url(https://spng.pngfly.com/20180319/age/kisspng-computer-icons-arrow-scalable-vector-graphics-clip-arrow-right-icon-stock-web-icons-softiconsm-5ab031a1397b66.1174029215214964812355.jpg) !important;
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+    .carousel-control-prev,.carousel-control-next {
+      cursor:pointer;
+    }
+
+    .carousel-indicators {
+      width: 0% !important
+    }
