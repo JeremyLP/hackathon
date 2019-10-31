@@ -5,6 +5,7 @@ import { Button } from 'reactstrap';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import axios from 'axios';
+import Filter from './components/MovieCharacter/Filter'
 import { all } from 'q';
 
 class App extends React.Component {
@@ -23,7 +24,7 @@ class App extends React.Component {
         this.setState({
           movies: data.movies ,
         });
-        console.log('2',this.state.movies);
+
   })
 }
 
@@ -39,7 +40,9 @@ componentDidMount(){
         {
           this.state.movies.length === 0 ? <p>loading</p> : <Example movies={this.state.movies}  />
         }
-         <Footer/>
+        
+        <Footer/>
+
       </div>
     );
   }
