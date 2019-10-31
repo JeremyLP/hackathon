@@ -13,7 +13,7 @@ import Filter from './MovieCharacter/Filter';
 
 let valInput = 2000;
 
-const Example = ({movies}) => {
+const Example = ({ movies }) => {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -35,22 +35,37 @@ const Example = ({movies}) => {
     setActiveIndex(newIndex);
   }
 
-  const slides = movies.map((movie) => {
+  function Filter({ movies, valInput }) {
+
+    let date = valInput;
+    let result = movies.filter(movie => movie.year === date);
+
+    console.log('filter 1', movies, result)
     return (
-      
+      result
+    )
+  }
+
+  componentDidMount(){
+    this.Filter();
+  };
+
+  const slides = result.map((movie) => {
+    return (
+
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={movie.id}
       >
-      <input type="number" id="input" className=""/> 
-      <button onclick={
-        valInput = document.getElementById("input")
-      }>
-      Search</button>
+        <input type="number" id="input" className="" />
+        <button onclick={
+          valInput = document.getElementById("input")
 
-                <Filter movie={movies} select={valInput} />
-      <MovieCharacter movietest={movie}  /> 
+        }>
+          Search</button>
+
+        <MovieCharacter movietest={movie} />
       </CarouselItem>
     );
   });
