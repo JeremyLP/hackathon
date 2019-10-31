@@ -2,7 +2,9 @@ import React from 'react';
 import './Grid.css';
 import './MovieCharacter.css';
 import Replace from './Replace';
+import Filter from './Filter';
 
+let valInput = 0;
 
 function MovieCharacter({movietest}) {
     return (

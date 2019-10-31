@@ -3,10 +3,10 @@ import React from 'react';
 function Filter({movies}, select){
 
     let date = select;
-    let result = movies.year.filter(movies.year === date);
+    let result = movies.year.includes(movies.year === date);
 
     return(
-        result
+        console.log('filter 1',movies ,result)
     )
 }
 

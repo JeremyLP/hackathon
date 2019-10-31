@@ -8,7 +8,10 @@ import {
 } from 'reactstrap';
 import './carousel.css';
 import MovieCharacter from './MovieCharacter/MovieCharacter';
+import Filter from './MovieCharacter/Filter';
 
+
+let valInput = 2000;
 
 const Example = ({movies}) => {
 
@@ -40,7 +43,14 @@ const Example = ({movies}) => {
         onExited={() => setAnimating(false)}
         key={movie.id}
       >
-      <MovieCharacter movietest={movie}  />  
+      <input type="number" id="input" className=""/> 
+      <button onclick={
+        valInput = document.getElementById("input")
+      }>
+      Search</button>
+
+                <Filter movie={movies} select={valInput} />
+      <MovieCharacter movietest={movie}  /> 
       </CarouselItem>
     );
   });
