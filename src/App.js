@@ -2,6 +2,8 @@ import React from 'react';
 import Example from './components/carousel';
 import './App.css';
 import { Button } from 'reactstrap';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import axios from 'axios';
 import { all } from 'q';
 
@@ -27,14 +29,17 @@ class App extends React.Component {
 
 componentDidMount(){
   this.getMovies();
+
 }
 
   render() {
     return (
       <div className="App">
+        <Navbar/>
         {
           this.state.movies.length === 0 ? <p>loading</p> : <Example movies={this.state.movies}  />
         }
+         <Footer/>
       </div>
     );
   }
