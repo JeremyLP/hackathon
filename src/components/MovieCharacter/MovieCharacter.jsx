@@ -6,8 +6,6 @@ import './MovieCharacter.css';
 
 function MovieCharacter({movietest}) {
     return (
-        <div className="align-center ">
-
             <div className="mob-12 tab-12 dsk-6 align-center row">
 
                 <img alt="Image" className="mob-12 tab-10 dsk-6 image-carrou" src={movietest.posterUrl}></img>
@@ -22,7 +20,6 @@ function MovieCharacter({movietest}) {
                 </div>
 
             </div>
-        </div>
     );
 }
 
