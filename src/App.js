@@ -2,7 +2,6 @@ import React from 'react';
 import Example from './components/carousel';
 import './App.css';
 import { Button } from 'reactstrap';
-// import MovieCharacter from './Components/MovieCharacter/MovieCharacter';
 import axios from 'axios';
 import { all } from 'q';
 
@@ -36,7 +35,6 @@ componentDidMount(){
         {
           this.state.movies.length === 0 ? <p>loading</p> : <Example movies={this.state.movies}  />
         }
-        
       </div>
     );
   }

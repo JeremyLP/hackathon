@@ -7,10 +7,11 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import './carousel.css';
+import MovieCharacter from './MovieCharacter/MovieCharacter';
 
 
 const Example = ({movies}) => {
-  console.log('3', movies);
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -30,10 +31,8 @@ const Example = ({movies}) => {
     if (animating) return;
     setActiveIndex(newIndex);
   }
-  console.log('4', movies);
 
   const slides = movies.map((movie) => {
-    console.log('5' , movie);
     return (
       
       <CarouselItem
@@ -41,8 +40,7 @@ const Example = ({movies}) => {
         onExited={() => setAnimating(false)}
         key={movie.id}
       >
-        <img src={movie.posterUrl} alt={movie.title} />
-        {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
+      <MovieCharacter movietest={movie}  />  
       </CarouselItem>
     );
   });

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
+
+
 @media screen and (max-width:500px){
     .image-carrou{
-        width: 100%;
         height: auto;
         margin:20px;
     }   
@@ -21,7 +22,6 @@
 
 @media screen and (min-width:500px) and (max-width:1023px){
     .image-carrou{
-        width: 100%;
         height: auto;
         margin:50px;
     }   
